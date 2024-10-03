@@ -1,0 +1,176 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7F7F8;
+    color: #1C1E21;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1em;
+    color: #4E5C6E;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #CED0D4;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1em;
+    background-color: #007ACC;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005A99;
+}
+
+/* Result Section */
+#result {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+
+/* Expansions Grid */
+.expansions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Expansion Container */
+.expansion-container {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.expansion-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Seasons Container */
+.seasons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Season Element */
+.season {
+    flex: 1 1 calc(45% - 40px); /* Two seasons per row */
+    max-width: calc(45% - 40px);
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+}
+
+.season h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Progress Circle */
+.progress-circle {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #ddd 0%,
+        #ddd 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-circle .level-label {
+    position: absolute;
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    width: 80px;
+}
+
+.progress-circle[data-level="0"] {
+    background: conic-gradient(
+        #ddd 0%,
+        #ddd 100%
+    );
+    color: #333;
+}
+
+.progress-circle[data-level="1"] {
+    background: conic-gradient(
+        #b0c4de 0%,
+        #b0c4de 100%
+    );
+}
+
+.progress-circle[data-level="2"] {
+    background: conic-gradient(
+        #4682b4 0%,
+        #4682b4 100%
+    );
+}
+
+.progress-circle[data-level="3"] {
+    background: conic-gradient(
+        #4169e1 0%,
+        #4169e1 100%
+    );
+}
+
+.progress-circle[data-level="4"] {
+    background: conic-gradient(
+        #0000cd 0%,
+        #0000cd 100%
+    );
+}
+
+.progress-circle[data-level="5"] {
+    background: conic-gradient(
+        #f2912a 0%,
+        #f2912a 100%
+    );
+}
+
+/* Responsive Adjustm
